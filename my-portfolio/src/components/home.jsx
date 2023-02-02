@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { FormattedMessage } from "react-intl";
 
 const Home = () => {
   return (
@@ -8,6 +9,9 @@ const Home = () => {
       {/* Container */}
       <body className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <p className="text-red-400">Hi, my name is </p>
+        <p>
+          <FormattedMessage id="hola" />
+        </p>
         <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
           David León
         </h1>
