@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
 
 import Logo from "../ui/assets/Logo.png";
@@ -36,7 +35,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link to="work" smooth={true} duration={500}>
-            Work
+            Projects
           </Link>
         </li>
         <li>
@@ -64,8 +63,8 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
-            About
+          <Link onClick={handleClick} to="resume" smooth={true} duration={500}>
+            Resume
           </Link>
         </li>
         <li className="py-6 text-4xl">
@@ -104,13 +103,12 @@ const Navbar = () => {
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#e36161]">
-            <a className="flex justify-between items-center w-full" href="/">
-              Email <HiOutlineMail size={30} />
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6db2f2]">
-            <a className="flex justify-between items-center w-full" href="/">
-              Resume <BsFillPersonLinesFill size={30} />
+            <a
+              className="flex justify-between items-center w-full"
+              href="mailto:davidleon_06@hotmail.com"
+            >
+              Email
+              <HiOutlineMail size={30} />
             </a>
           </li>
         </ul>
