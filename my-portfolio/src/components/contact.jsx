@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div
+    <section
       name="contact"
       className="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4"
     >
@@ -11,14 +11,14 @@ const Contact = () => {
         method="POST"
         className="p-3 border border-gray-100 flex flex-col max-w-[600px] w-full"
       >
-        <div className="pb-8 h text-gray-300">
+        <header className="pb-8 h text-gray-300">
           <p className="text-4xl font-bold inline border-b-4 border-red-500 ">
             Contact
           </p>
           <p className="py-4">
             Submit the form below or send me an email - davidleon_06@hotmail.com
           </p>
-        </div>
+        </header>
         <input
           className="p-2 bg-[#ccd6f6]"
           type="text"
@@ -40,7 +40,7 @@ const Contact = () => {
           Let's collaborate
         </button>
       </form>
-    </div>
+    </section>
   );
 };
 
