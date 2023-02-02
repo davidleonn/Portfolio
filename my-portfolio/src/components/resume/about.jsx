@@ -1,21 +1,76 @@
-import React from "react";
+import { useState } from "react";
+
+import Formation from "./formation";
+import Info from "./info";
+import Experience from "./experience";
 
 const About = () => {
+  const [openTab, setOpenTab] = useState(1);
+
   return (
-    <section className="flex flex-col h-[400px] justify-center bg-slate-800">
-      <div className="grid sm:grid-cols-2 gap-8 px-4">
-        <article className="sm:text-right text-4xl font-bold">
-          <p>Hi, I'm David, nice to meet you. Please take a look around.</p>
-        </article>
-        <aside>
-          <p>
-            From a personal perspective, I consider myself to be a reliable
-            team-worker whose aim is to proficiently and proactively add value
-            to the team. I am looking to take new challenges which will give me
-            both a personal and a professional grow.
+    <section
+      name="about"
+      className="w-full md:hsm:w-auto-screen bg-[#0a192f] text-gray-300"
+    >
+      <header className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center">
+        <div className="sm:text:right pl-4">
+          <p className="text-5xl font-bold inline border-b-4 border-red-500">
+            About
           </p>
-        </aside>
-      </div>
+        </div>
+      </header>
+      <body className="max-w-[1000px] mx-auto  flex flex-col ">
+        <ul className="flex flex-row justify-evenly bg-slate-800">
+          <li>
+            <a
+              onClick={() => setOpenTab(1)}
+              className={
+                openTab === 1
+                  ? "inline-block px-2 py-2 text-gray-600 bg-red-500 rounded shadow lg:w-[19.5rem] md:w-64 sm:w-auto"
+                  : "inline-block px-2 py-2 text-gray-600 bg-white rounded shadow lg:w-[19.5rem] md:w-64 sm:w-auto"
+              }
+            >
+              About me
+            </a>
+          </li>
+          <li>
+            <a
+              onClick={() => setOpenTab(2)}
+              className={
+                openTab === 2
+                  ? "inline-block px-2 py-2 text-gray-600 bg-red-500 rounded shadow lg:w-[19.5rem] md:w-64 sm:w-auto"
+                  : "inline-block px-2 py-2 text-gray-600 bg-white rounded shadow lg:w-[19.5rem] md:w-64 sm:w-auto"
+              }
+            >
+              Work Experience
+            </a>
+          </li>
+
+          <li>
+            <a
+              onClick={() => setOpenTab(3)}
+              className={
+                openTab === 3
+                  ? "inline-block px-2 py-2 text-gray-600 bg-red-500 rounded shadow lg:w-[19.5rem] md:w-64 sm:w-auto"
+                  : "inline-block px-2 py-2 text-gray-600 bg-white rounded shadow lg:w-[19.5rem] md:w-64 sm:w-auto"
+              }
+            >
+              Formation
+            </a>
+          </li>
+        </ul>
+
+        <div className={openTab === 1 ? "block" : "hidden"}>
+          <Info />
+        </div>
+        <div className={openTab === 2 ? "block" : "hidden"}>
+          <Experience />
+        </div>
+
+        <div className={openTab === 3 ? "block" : "hidden"}>
+          <Formation />
+        </div>
+      </body>
     </section>
   );
 };

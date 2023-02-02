@@ -12,10 +12,10 @@ const Home = () => {
           David León
         </h1>
         <h2 className="text-4xl sm:text-6xl font-bold text-[#999a9c]">
-          I'm a Front-End Developer.
+          I'm a Full-Stack Developer.
         </h2>
-        <h2 className="text-[#999a9c] py-4 max-w-[700px]">
-          A Front-End Developer with entry-level experience specializing in web
+        <h2 className="text-gray-300 py-4 max-w-[700px]">
+          A Full-Stack Developer with entry-level experience specializing in web
           development, user interface design, HTML, CSS and React. Adept at
           identifying opportunities to enhance and improve user experience.
         </h2>
