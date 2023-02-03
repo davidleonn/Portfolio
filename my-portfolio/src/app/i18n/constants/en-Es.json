@@ -1,3 +1,8 @@
 {
-  "hola": "hola"
+  "navbar.home": "Home",
+  "navbar.skills": "Skills",
+  "navbar.about": "About",
+  "navbar.projects": "Projects",
+  "navbar.contact": "Contact",
+  "navbar.homee": ""
 }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { Link } from "react-scroll";
+import { FormattedMessage } from "react-intl";
 
 import Logo from "../ui/assets/Logo.png";
 
@@ -20,27 +21,27 @@ const Navbar = () => {
       <ul className="hidden md:flex font-semibold text-lg">
         <li>
           <Link to="home" smooth={true} duration={500}>
-            Home
+            <FormattedMessage id="navbar.home" />
           </Link>
         </li>
         <li>
           <Link to="skills" smooth={true} duration={500}>
-            Skills
+            <FormattedMessage id="navbar.skills" />
           </Link>
         </li>
         <li>
           <Link to="about" smooth={true} duration={500}>
-            About
+            <FormattedMessage id="navbar.about" />
           </Link>
         </li>
         <li>
           <Link to="work" smooth={true} duration={500}>
-            Projects
+            <FormattedMessage id="navbar.projects" />
           </Link>
         </li>
         <li>
           <Link to="contact" smooth={true} duration={500}>
-            Contact
+            <FormattedMessage id="navbar.contact" />
           </Link>
         </li>
       </ul>

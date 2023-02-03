@@ -5,7 +5,6 @@ import Navbar from "./components/navbar";
 import Skills from "./components/skills";
 import Work from "./components/projects";
 import About from "./components/resume/about";
-import Decoration from "./app/decoration/decoration";
 
 const App = () => {
   return (
