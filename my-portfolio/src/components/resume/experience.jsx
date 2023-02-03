@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 import {
   SiFastify,
   SiPrisma,
@@ -15,15 +16,13 @@ const Experience = () => {
   return (
     <section className="flex flex-col h-[400px] justify-center items-center bg-slate-800">
       <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
-        <article className="sm:text-right text-4xl font-bold">
+        <article className="p-8 sm:text-right text-4xl font-bold">
           <p>Basetis</p>
           <p className="text-2xl">Oct. 2022 - Feb. 2023</p>
         </article>
         <aside>
           <p>
-            I worked as a full-stack developer building and internal web app. I
-            took part in both front and back, where I used differents
-            technologies and tools:
+            <FormattedMessage id="experience-page" />
           </p>
 
           <ul className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-gray-300">

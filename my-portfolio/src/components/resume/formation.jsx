@@ -15,7 +15,7 @@ const Formation = () => {
   return (
     <section className="flex flex-col h-[400px] justify-center items-center bg-slate-800">
       <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
-        <article className="sm:text-right text-4xl font-bold">
+        <article className="sm:text-right p-8 text-4xl font-bold">
           <p>Bootcamp full-stack Developer (700h)</p>
         </article>
         <aside>

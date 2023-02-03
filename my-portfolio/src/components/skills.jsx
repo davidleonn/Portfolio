@@ -6,6 +6,7 @@ import Git from "../ui/assets/github.png";
 import ReactImg from "../ui/assets/react.png";
 import Node from "../ui/assets/node.png";
 import ts from "../ui/assets/ts.png";
+import { FormattedMessage } from "react-intl";
 
 const Skills = () => {
   return (
@@ -17,9 +18,11 @@ const Skills = () => {
       <body className="max-w-[1000px] mx-auto flex flex-col justify-center w-full h-full">
         <header>
           <p className="text-4xl font-bold inline border-b-4 border-red-500 ">
-            Skills
+            <FormattedMessage id="skills" />
           </p>
-          <p className="py-4">These are the technologies I've worked with:</p>
+          <p className="py-4">
+            <FormattedMessage id="skills-page.technologies" />
+          </p>
         </header>
         <article className="w-full grid grid-cols-2 sm:grid-cols-3 gap-3 text-center py-8">
           <div className=" shadow-md shadow-[#e48e54] hover:scale-110 duration-500">

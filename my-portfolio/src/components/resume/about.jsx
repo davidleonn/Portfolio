@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FormattedMessage } from "react-intl";
 
 import Formation from "./formation";
 import Info from "./info";
@@ -12,10 +13,10 @@ const About = () => {
       name="about"
       className="w-full md:hsm:w-auto-screen bg-[#0a192f] text-gray-300"
     >
-      <header className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center">
+      <header className="max-w-[1000px] mx-auto p-20 flex flex-col justify-center">
         <div className="sm:text:right pl-4">
           <p className="text-5xl font-bold inline border-b-4 border-red-500">
-            About
+            <FormattedMessage id="about" />
           </p>
         </div>
       </header>
@@ -30,7 +31,7 @@ const About = () => {
                   : "inline-block px-2 py-2 text-gray-600 bg-white rounded shadow lg:w-[19.5rem] md:w-64 sm:w-auto"
               }
             >
-              About me
+              <FormattedMessage id="about-page.profile" />
             </a>
           </li>
           <li>
@@ -42,7 +43,7 @@ const About = () => {
                   : "inline-block px-2 py-2 text-gray-600 bg-white rounded shadow lg:w-[19.5rem] md:w-64 sm:w-auto"
               }
             >
-              Work Experience
+              <FormattedMessage id="about-page.experience" />
             </a>
           </li>
 
@@ -55,7 +56,7 @@ const About = () => {
                   : "inline-block px-2 py-2 text-gray-600 bg-white rounded shadow lg:w-[19.5rem] md:w-64 sm:w-auto"
               }
             >
-              Formation
+              <FormattedMessage id="about-page.formation" />
             </a>
           </li>
         </ul>

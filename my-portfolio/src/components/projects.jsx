@@ -1,4 +1,6 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
+
 import workin from "../ui/assets/workin.png";
 import worke from "../ui/assets/worke.jpg";
 
@@ -63,9 +65,11 @@ const Work = () => {
       <body className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <header className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-red-500">
-            Projects
+            <FormattedMessage id="projects" />
           </p>
-          <p className="py-6">Checkout some of my recent projects</p>
+          <p className="py-6">
+            <FormattedMessage id="projects-page.description" />
+          </p>
         </header>
 
         {/* container for projects */}

@@ -21,27 +21,27 @@ const Navbar = () => {
       <ul className="hidden md:flex font-semibold text-lg">
         <li>
           <Link to="home" smooth={true} duration={500}>
-            <FormattedMessage id="navbar.home" />
+            <FormattedMessage id="home" />
           </Link>
         </li>
         <li>
           <Link to="skills" smooth={true} duration={500}>
-            <FormattedMessage id="navbar.skills" />
+            <FormattedMessage id="skills" />
           </Link>
         </li>
         <li>
           <Link to="about" smooth={true} duration={500}>
-            <FormattedMessage id="navbar.about" />
+            <FormattedMessage id="about" />
           </Link>
         </li>
         <li>
           <Link to="work" smooth={true} duration={500}>
-            <FormattedMessage id="navbar.projects" />
+            <FormattedMessage id="projects" />
           </Link>
         </li>
         <li>
           <Link to="contact" smooth={true} duration={500}>
-            <FormattedMessage id="navbar.contact" />
+            <FormattedMessage id="contact" />
           </Link>
         </li>
       </ul>
@@ -60,27 +60,27 @@ const Navbar = () => {
       >
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} to="home" smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="resume" smooth={true} duration={500}>
-            Resume
+            <FormattedMessage id="navbar.home" />
           </Link>
         </li>
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-            Skills
+            <FormattedMessage id="navbar.skills" />
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link onClick={handleClick} to="resume" smooth={true} duration={500}>
+            <FormattedMessage id="navbar.about" />
           </Link>
         </li>
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} to="work" smooth={true} duration={500}>
-            Work
+            <FormattedMessage id="navbar.projects" />
           </Link>
         </li>
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
-            Contact
+            <FormattedMessage id="navbar.contact" />
           </Link>
         </li>
       </ul>

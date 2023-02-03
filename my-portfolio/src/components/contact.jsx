@@ -1,6 +1,9 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
+import { useIntl } from "react-intl";
 
 const Contact = () => {
+  const intl = useIntl();
   return (
     <section
       name="contact"
@@ -13,31 +16,34 @@ const Contact = () => {
       >
         <header className="pb-8 h text-gray-300">
           <p className="text-4xl font-bold inline border-b-4 border-red-500 ">
-            Contact
+            <FormattedMessage id="contact" />
           </p>
           <p className="py-4">
-            Submit the form below or send me an email - davidleon_06@hotmail.com
+            <FormattedMessage id="contact-page.intro" />
           </p>
         </header>
         <input
           className="p-2 bg-[#ccd6f6]"
           type="text"
-          placeholder="Name"
+          placeholder={intl.formatMessage({ id: "contact-page.form-name" })}
           name="name"
+          required={true}
         />
         <input
           className="my-4 p-2 bg-[#ccd6f6]"
           type="text"
-          placeholder="Email"
+          placeholder={intl.formatMessage({ id: "contact-page.form-email" })}
           name="email"
+          required={true}
         />
         <textarea
           className="p-2 bg-[#ccd6f6]"
-          placeholder="Message"
+          placeholder={intl.formatMessage({ id: "contact-page.form-message" })}
           name="message"
+          required={true}
         ></textarea>
         <button className="text-white border-2 hover:bg-red-500 hover:border-red-500 px-4 py-3 my-8 mx-auto flex items-center">
-          Let's collaborate
+          <FormattedMessage id="contact-page.form-button" />
         </button>
       </form>
     </section>
