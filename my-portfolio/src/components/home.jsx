@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <section name="home" className="w-full h-screen bg-[#0a192f]">
       {/* Container */}
-      <body className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
+      <article className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <p className="text-red-400">
           <FormattedMessage id="home-page.greet" />
         </p>
@@ -31,7 +31,7 @@ const Home = () => {
             </span>
           </button>
         </div>
-      </body>
+      </article>
     </section>
   );
 };

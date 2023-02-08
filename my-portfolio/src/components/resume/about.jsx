@@ -20,7 +20,7 @@ const About = () => {
           </p>
         </div>
       </header>
-      <body className="max-w-[1000px] mx-auto  flex flex-col ">
+      <article className="max-w-[1000px] mx-auto  flex flex-col ">
         <ul className="flex flex-row justify-evenly bg-slate-800">
           <li>
             <a
@@ -71,7 +71,7 @@ const About = () => {
         <div className={openTab === 3 ? "block" : "hidden"}>
           <Formation />
         </div>
-      </body>
+      </article>
     </section>
   );
 };

@@ -15,7 +15,7 @@ const Skills = () => {
       className="w-full h-screen bg-[#0a192f] text-gray-300"
     >
       {/* container */}
-      <body className="max-w-[1000px] mx-auto flex flex-col justify-center w-full h-full">
+      <article className="max-w-[1000px] mx-auto flex flex-col justify-center w-full h-full">
         <header>
           <p className="text-4xl font-bold inline border-b-4 border-red-500 ">
             <FormattedMessage id="skills" />
@@ -50,7 +50,7 @@ const Skills = () => {
             <p className="my-4">Git</p>
           </div>
         </article>
-      </body>
+      </article>
     </section>
   );
 };
