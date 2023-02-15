@@ -6,6 +6,7 @@ import shop from "../ui/assets/shop.png";
 import hangman from "../ui/assets/hangman.png";
 import select from "../ui/assets/select.png";
 import notes from "../ui/assets/notes.png";
+import food from "../ui/assets/food.png";
 
 const shopCart = (
   <div
@@ -108,6 +109,31 @@ const notesApp = (
     </div>
   </div>
 );
+
+const foodOrderApp = (
+  <div
+    style={{ backgroundImage: `url(${food})` }}
+    className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
+  >
+    <div className=" opacity-0 group-hover:opacity-100">
+      <span className="text-2xl font-bold text-white tracking-wider">
+        React JS Food order App
+      </span>
+      <div className="pt-8 text-center">
+        <a href="https://food-order-app-iota-eight.vercel.app/">
+          <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+            Demo
+          </button>
+        </a>
+        <a href="https://github.com/davidleonn/food-order-app">
+          <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+            Code
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+);
 /* const gridItem2 = (
   <div
     style={{ backgroundImage: `url(${workin})` }}
@@ -155,6 +181,7 @@ const Work = () => {
           {hangmanGame}
           {reactSelect}
           {notesApp}
+          {foodOrderApp}
         </div>
       </article>
     </section>
