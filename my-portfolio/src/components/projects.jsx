@@ -7,6 +7,7 @@ import hangman from "../ui/assets/hangman.png";
 import select from "../ui/assets/select.png";
 import notes from "../ui/assets/notes.png";
 import food from "../ui/assets/food.png";
+import fitt from "../ui/assets/fitt.png";
 
 const shopCart = (
   <div
@@ -33,6 +34,7 @@ const shopCart = (
     </div>
   </div>
 );
+
 const hangmanGame = (
   <div
     style={{ backgroundImage: `url(${hangman})` }}
@@ -84,6 +86,7 @@ const reactSelect = (
     </div>
   </div>
 );
+
 const notesApp = (
   <div
     style={{ backgroundImage: `url(${notes})` }}
@@ -134,6 +137,32 @@ const foodOrderApp = (
     </div>
   </div>
 );
+
+const fitnessApp = (
+  <div
+    style={{ backgroundImage: `url(${fitt})` }}
+    className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
+  >
+    <div className=" opacity-0 group-hover:opacity-100">
+      <span className="text-2xl font-bold text-white tracking-wider">
+        Fitness App React TS
+      </span>
+      <div className="pt-8 text-center">
+        <a href="https://fitness-j245k44p1-davidleonn.vercel.app/">
+          <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+            Demo
+          </button>
+        </a>
+        <a href="https://github.com/davidleonn/fitness-app">
+          <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+            Code
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+);
+
 /* const gridItem2 = (
   <div
     style={{ backgroundImage: `url(${workin})` }}
@@ -179,6 +208,7 @@ const Work = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {shopCart}
           {hangmanGame}
+          {fitnessApp}
           {reactSelect}
           {notesApp}
           {foodOrderApp}
